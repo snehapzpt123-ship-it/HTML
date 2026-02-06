@@ -1,0 +1,22 @@
+li { 
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: bold;
+}
+li :hover{
+    color: aqua;
+}
+body{
+    color: pink;
+}
+
+.primary{
+    padding:10px 20px;
+    border: none;
+    background-color: green;
+    margin: 20px;
+    color: aliceblue;
+}
+
+#error{
+color: red;
+}

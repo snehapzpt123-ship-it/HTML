@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href="web.css" rel="stylesheet" type="text/css">
+    <link href="responsive.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></i> Youtube </a>  
+            <a href="#"> <i class="fa-solid fa-user"></i> Profile</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i> Contact </a>
+        </li>
+    </ul>
+
+    <div class="us">
+        <img src="img1.jpg" alt="Description of the image">
+    </div>
+<div class="contact">
+    <form action="#">
+        <h2> CONTACT US</h2>
+        <input type="text" class="name" id="name" placeholder="Enter your Name">
+        <p id="error"> </p>
+        <input type="text" class="age" id="age" placeholder="Enter your Age">
+        <input type="number" class="contact" id="contatc" placeholder="Enter your Contact">
+        <input type="text" class="email" id="email" placeholder="Enter your Email">
+        <button class="primary" type="submit"  onclick="validate(name)"> SUBMIT</button>
+
+    </form>
+
+</div>
+<div class="add">
+    <form action="">
+        <input type="text" class="num" id="num1" placeholder="Enter any Number">
+        <input type="text" class="num" id="num2" placeholder="Enter any number">
+        <input type="number" class="num" id="num3" placeholder="result">
+        <button class="primary" type="submit"> SUBMIT</button>
+    </form>
+</div>
+
+<script>
+function validate(data)
+{
+    const pattern1 = /^[a-zA-Z]+$/;
+    const name = document.getElementById("name").value;
+    if(!pattern1.test(name))
+    {
+        
+        alert("Only Characters are allowed");
+        msg="Enter any value";
+        //document.getElementById("error").innerHTML=msg;
+    }
+
+    const pattern2 = /^[0-9]+$/;
+    const age = document.getElementById("age").value;
+    if(!pattern2.test(age))
+    {
+        alert("Only Numbers are allowed");
+    }
+
+    const num1 = parseInt(document.getElementById("num1").value);
+    const num2 = parseInt(document.getElementById("num2").value);
+    let result = num1+num2;
+
+    document.getElementById("num3").value = result;
+}
+
+</script>
+
+</body>
+</html>
