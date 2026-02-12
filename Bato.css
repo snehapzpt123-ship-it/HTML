@@ -34,6 +34,12 @@ body{
   text-align: center;
   padding: 20px;
 }
+#pages a:hover{
+  color: rgb(10, 88, 71);
+}
+#pages i:hover{
+  color: rgb(10, 88, 71);
+}
 #pages a {
     text-decoration: none;
     font-size: 25px;
@@ -42,7 +48,6 @@ body{
     font-weight: 700;
     padding: 20px;
 }
-
 #pages .fa-solid , .fa-brands {
     margin-left:15px;
     margin-top: 30px;
