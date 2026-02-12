@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#header {
+    background-color: rgb(17, 131, 106);
+    margin: 0px;
+    padding: 0px;
+}
+
+#bato {
+    text-align: center;
+    font-family: Arial;
+    font-size: 35px;
+    padding-top:20px;
+    margin: 0px;
+}
+.white {
+    color: white;
+}
+.pink {
+    color: rgb(248, 8, 68);
+}
+#v3x {
+    line-height: 0.8;
+    font-family: Arial;
+    font-size: 18px;
+    color:rgb(248, 8, 68);
+    margin: 0px;
+    margin-left:355px;
+    padding:0px; 
+}
+#pages{
+  text-align: center;
+  padding: 20px;
+}
+#pages a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial;
+    color:rgb(176, 240, 213);
+    font-weight: 700;
+    padding: 20px;
+}
+
+#pages .fa-solid , .fa-brands {
+    margin-left:15px;
+    margin-top: 30px;
+    color: rgb(176, 240, 213);
+    font-size: 25px;
+}
